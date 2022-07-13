@@ -1,5 +1,4 @@
 import React from "react";
-import { CommonContainer } from "../Common/CommonContainer";
 import { Button, Content } from "./Moar.styles";
 import { UppedRarefiedText } from "../Common/StyledText";
 
