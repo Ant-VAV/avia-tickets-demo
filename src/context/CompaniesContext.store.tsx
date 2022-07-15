@@ -8,25 +8,22 @@ interface CompaniesContextStoreProps {
 }
 
 export function CompaniesContextStore({children}: CompaniesContextStoreProps) {
-    const [isLoading, setIsLoading] = useState<boolean>();
     const [companies, setCompanies] = useState<Company[]>();
 
     const fetchData = useCallback(async () => {
         try {
-            setIsLoading(true);
             const companies = await getCompanies();
             setCompanies(companies);
-        } finally {
-            setIsLoading(false);
+        } catch {
         }
     }, []);
 
     useEffect(() => {
         fetchData();
-    }, [fetchData])
+    }, [fetchData]);
 
     return (
-        <CompaniesContext.Provider value={{companies, isLoading}}>
+        <CompaniesContext.Provider value={{companies}}>
             {children}
         </CompaniesContext.Provider>
     );

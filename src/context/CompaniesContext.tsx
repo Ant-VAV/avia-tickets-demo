@@ -3,7 +3,6 @@ import { Company } from "../typings/server";
 
 interface CompaniesContextProps {
     companies?: Company[];
-    isLoading?: boolean;
 }
 
 const defaultParams: CompaniesContextProps = {};
