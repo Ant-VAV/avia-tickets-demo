@@ -1,29 +1,35 @@
 import React from "react";
-import { Container } from "./SearchBlock.styles";
+import { ResultsContainer } from "./MainPage.styles";
 import { Offer } from "../Offer/Offer";
 import { TransferFilter } from "../TransfersFilter/TransferFilter";
 import { CompaniesFilter } from "../CompaniesFilter/CompaniesFilter";
 import { SortButtons } from "../SortButtons/SortButtons";
 import { Moar } from "../Moar/Moar";
+import { SearchBlock } from "../SearchBlock/SearchBlock";
+import { Separator } from "../Common/Separator";
 
-export function SearchBlock() {
+export function MainPage() {
     return (
-        <Container>
-            <section>
-                <TransferFilter/>
-                <CompaniesFilter/>
-            </section>
-            <section>
-                <SortButtons/>
-                <Offer/>
-                <Offer/>
-                <Offer/>
-                <Offer/>
-                <Offer/>
-                <Offer/>
-                <Offer/>
-                <Moar/>
-            </section>
-        </Container>
+        <>
+            <SearchBlock/>
+            <Separator/>
+            <ResultsContainer>
+                <section>
+                    <TransferFilter/>
+                    <CompaniesFilter/>
+                </section>
+                <section>
+                    <SortButtons/>
+                    <Offer/>
+                    <Offer/>
+                    <Offer/>
+                    <Offer/>
+                    <Offer/>
+                    <Offer/>
+                    <Offer/>
+                    <Moar/>
+                </section>
+            </ResultsContainer>
+        </>
     );
 }
