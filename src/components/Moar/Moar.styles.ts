@@ -8,7 +8,7 @@ export const Content = styled(CommonContainer)`
 
 export const Button = styled.button`
   flex-grow: 1;
-  background-color: ${props => props.theme.colors.price};
+  background-color: ${props => props.theme.colors.brandColor};
   color: ${props => props.theme.colors.colorForDarkBack};
   padding: 15px;
   border: none;

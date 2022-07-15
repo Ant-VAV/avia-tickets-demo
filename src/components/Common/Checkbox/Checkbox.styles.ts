@@ -30,7 +30,7 @@ export const StyledCheckbox = styled.div<{ checked?: boolean; }>`
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 1px solid ${props => props.theme.colors.price};
+  border: 1px solid ${props => props.theme.colors.brandColor};
   border-radius: 2px;
   box-sizing: border-box;
   text-align: center;

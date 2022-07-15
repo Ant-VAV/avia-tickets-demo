@@ -19,9 +19,9 @@ export const Label = styled.label<{ checked?: boolean; }>`
   flex-grow: 1;
   position: relative;
   cursor: pointer;
-  border: 1px solid #DFE5EC;
+  border: 1px solid ${props => props.theme.colors.buttonBorder};
 
-  ${props => props.checked ? `background-color: ${props.theme.colors.price};
+  ${props => props.checked ? `background-color: ${props.theme.colors.brandColor};
   color: ${props.theme.colors.colorForDarkBack};` : ""};
 
   &:nth-of-type(2) {

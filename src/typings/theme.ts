@@ -9,12 +9,13 @@ export const theme: DefaultTheme = {
 
     colors: {
         background: "#F3F7FA",
-        price: "#2196F3",
+        brandColor: "#2196F3",
         colorForDarkBack: "#FFFFFF",
         infoBlock: "#FFFFFF",
         gray: "#A0B0B9",
         hoverBackground: "#F1FCFF",
         focusInput: "#006EC6",
         activeInput: "#03467B",
+        buttonBorder: "#DFE5EC",
     },
 };

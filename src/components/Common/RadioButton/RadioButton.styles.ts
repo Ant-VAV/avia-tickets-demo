@@ -33,7 +33,7 @@ export const InnerCircle = styled.div`
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: ${props => props.theme.colors.price};
+  background-color: ${props => props.theme.colors.brandColor};
 `;
 
 export const StyledCheckbox = styled.div<{ checked?: boolean; }>`
@@ -41,7 +41,7 @@ export const StyledCheckbox = styled.div<{ checked?: boolean; }>`
   position: relative;
   width: 20px;
   height: 20px;
-  border: 1px solid ${props => props.theme.colors.price};
+  border: 1px solid ${props => props.theme.colors.brandColor};
   border-radius: 50%;
   margin-right: 10px;
   box-sizing: border-box;

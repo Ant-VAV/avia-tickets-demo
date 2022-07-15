@@ -16,7 +16,7 @@ export const Row = styled.div`
 
 export const Price = styled.div`
   font-size: 24px;
-  color: ${props => props.theme.colors.price};
+  color: ${props => props.theme.colors.brandColor};
 `;
 
 export const AirCompanyLogo = styled.div`
