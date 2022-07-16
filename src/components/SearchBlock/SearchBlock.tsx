@@ -2,6 +2,7 @@ import React, { MouseEvent, useState } from "react";
 import { Input } from "../Common/Input/Input";
 import { Container } from "./SearchBlock.styles";
 import { InterChangeButton } from "../Common/InterChangeButton/InterChangeButton";
+import { DateInput } from "../Common/Input/DateInput";
 
 interface SearchBlockProps {
 }
@@ -9,6 +10,8 @@ interface SearchBlockProps {
 export function SearchBlock(props: SearchBlockProps) {
     const [cityFrom, setCityFrom] = useState<string>("");
     const [cityTo, setCityTo] = useState<string>("");
+    const [dateStart, setDateStart] = useState<string>("");
+    const [dateEnd, setDateEnd] = useState<string>("");
 
 
     const handleInterChangeCities = (event: MouseEvent<HTMLButtonElement>) => {
@@ -24,8 +27,8 @@ export function SearchBlock(props: SearchBlockProps) {
             <InterChangeButton onClick={handleInterChangeCities}/>
             <Input type={"text"} placeholder={"Куда"} value={cityTo} onValueChange={setCityTo}/>
             {/*И тут я сломался верстать под прототипы. Доделаю датовыбиралки, если время будет.*/}
-            <Input type={"date"} placeholder={"Когда"} onValueChange={setCityTo}/>
-            <Input type={"date"} placeholder={"Обратно"} onValueChange={setCityTo}/>
+            <DateInput placeholder={"Когда"} value={dateStart} onValueChange={setDateStart}/>
+            <DateInput placeholder={"Обратно"} value={dateEnd} onValueChange={setDateEnd}/>
         </Container>
     );
 }
