@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/avia-tickets-demo/static/css/main.e1a1422a.css",
-    "main.js": "/avia-tickets-demo/static/js/main.fb6f8ea6.js",
+    "main.js": "/avia-tickets-demo/static/js/main.60037de0.js",
     "static/media/Logo.svg": "/avia-tickets-demo/static/media/Logo.9bf49135ebd3eb1167f061d2deb906d8.svg",
     "index.html": "/avia-tickets-demo/index.html",
     "static/media/Mark.svg": "/avia-tickets-demo/static/media/Mark.c8576df1e2debc77509b943ae5e31558.svg",
     "main.e1a1422a.css.map": "/avia-tickets-demo/static/css/main.e1a1422a.css.map",
-    "main.fb6f8ea6.js.map": "/avia-tickets-demo/static/js/main.fb6f8ea6.js.map"
+    "main.60037de0.js.map": "/avia-tickets-demo/static/js/main.60037de0.js.map"
   },
   "entrypoints": [
     "static/css/main.e1a1422a.css",
-    "static/js/main.fb6f8ea6.js"
+    "static/js/main.60037de0.js"
   ]
 }
