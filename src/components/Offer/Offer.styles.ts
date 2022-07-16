@@ -3,7 +3,7 @@ import { CommonContainer } from "../Common/CommonContainer";
 import { pngRemover } from "../../helpers/textFormatters";
 
 export const Container = styled(CommonContainer)`
-  max-width: 502px;
+  max-width: 420px;
 `;
 
 export const Row = styled.div`
