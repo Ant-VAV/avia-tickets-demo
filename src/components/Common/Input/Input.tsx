@@ -1,7 +1,7 @@
 import React, { InputHTMLAttributes } from "react";
 import { StyledInput } from "./Input.styles";
 
-interface InputProps extends InputHTMLAttributes<string> {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     onValueChange: (value: string) => void;
 }
 
