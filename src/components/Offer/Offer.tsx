@@ -20,7 +20,7 @@ export function Offer(props: OfferProps) {
     return (
         <Container>
             <Row>
-                <Price>{getRurCurrency(price)}</Price>
+                <Price>{getRurCurrency(price)} ₽</Price>
                 {companyLogo && <AirCompanyLogo companyLogo={companyLogo}/>}
             </Row>
             <Row>

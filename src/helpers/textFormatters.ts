@@ -1,12 +1,6 @@
-import currency from "currency.js";
-
-export const getRurCurrency = (value: number): string => currency(value, {
-    symbol: "₽",
-    separator: " ",
-    decimal: ",",
-    precision: 0,
-    pattern: "# !",
-}).format();
+export const getRurCurrency = (value: number): string => {
+    return new Intl.NumberFormat("ru-RU").format(value);
+};
 
 export const decliner = (number: number, words: string[]): string => {
     number = number % 100;
