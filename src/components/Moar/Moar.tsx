@@ -1,6 +1,7 @@
 import React, { ButtonHTMLAttributes } from "react";
 import { Button, Content } from "./Moar.styles";
 import { UppedRarefiedText } from "../Common/StyledText";
+import { decliner } from "../../helpers/textFormatters";
 
 interface MoarProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     showCount: number;
@@ -11,7 +12,8 @@ export function Moar(props: MoarProps) {
     return (
         <Content>
             <Button onClick={onClick}>
-                <UppedRarefiedText>Показать еще {showCount} билетов</UppedRarefiedText>
+                <UppedRarefiedText>Показать
+                    еще {decliner(showCount, ["билет", "билета", "билетов"])}</UppedRarefiedText>
             </Button>
         </Content>
     );
