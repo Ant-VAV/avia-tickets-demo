@@ -23,7 +23,7 @@ export const Price = styled.div`
 export const AirCompanyLogo = styled.div<{ companyLogo: string }>`
   width: 110px;
   height: 36px;
-  background-image: url("/resources/${props => pngRemover(props.companyLogo)}.png");
-  background-image: image-set(url("/resources/${props => pngRemover(props.companyLogo)}.png") 1x,
-  url("/resources/${props => pngRemover(props.companyLogo)}@2x.png") 2x);
+  background-image: url("${process.env.PUBLIC_URL}/resources/${props => pngRemover(props.companyLogo)}.png");
+  background-image: image-set(url("${process.env.PUBLIC_URL}/resources/${props => pngRemover(props.companyLogo)}.png") 1x,
+  url("${process.env.PUBLIC_URL}/resources/${props => pngRemover(props.companyLogo)}@2x.png") 2x);
 `;
